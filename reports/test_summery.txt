@@ -1,0 +1,36 @@
+Manual Test Summary Report
+Date: August 12, 2025
+
+Test Cases Executed:
+
+TC_001: Contact Us Form
+- Browser launched, navigated to Contact Us.
+- Form filled, file uploaded (no submit).
+- No errors, UI and accessibility verified.
+- Screenshots saved in test-results-evidences/TC_001/
+
+TC_002: Product Search
+- Home page loaded, navigated to Products.
+- Searched for 'Blue Top', verified 'SEARCHED PRODUCTS'.
+- UI, accessibility, and user experience confirmed.
+- Screenshots saved in test-results-evidences/TC_002/
+
+TC_003: Subscription
+- Scrolled to footer, entered dummy email, clicked arrow.
+- Verified 'SUBSCRIPTION DONE' and success message.
+- UI, accessibility, and user experience confirmed.
+- Screenshots saved in test-results-evidences/TC_003/
+
+General Observations:
+- All test cases passed as per expected results.
+- UI structure is clear and accessible.
+- User experience is smooth, no major issues found.
+
+Improvements & Enhancements:
+- Add more visible feedback for file upload (TC_001).
+- Highlight search results more distinctly (TC_002).
+- Subscription success message could be more prominent (TC_003).
+- Consider improving color contrast for accessibility.
+- Add ARIA labels for better screen reader support.
+
+End of Report.

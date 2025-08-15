@@ -1,0 +1,11 @@
+
+Manual Testing Instructions
+1. Use the Playwright MCP Server to test the test cases mentioned in the manual_test_cases.txt file by launching the browser and interact using playwright mcp tools for each test case.
+2. Execute the test cases one by one.
+3. Perform the described test steps in the test cases.
+4. If any failures or issues occur, re-try until the issue is fixed.
+5. Verify the actual results against the expected results for each test case and focus on the accesibility, UI structure and user experience.
+6. Add a thick red border around the specific areas you tested to prove the test case failed/passed and take screenshots of the entire page and Explicitly save or move all screenshots to the 'test-results-evidences/[Test_Case_ID]/' directory after capture, regardless of default tool behavior.
+7. Create a detailes Test summery Report after the execution of all the Test Cases and save it in "reports/test_summery".
+8. Mention any improvements or enhancements that can be implemented related to the implementation, UI, Usability and any elements, in the test summery report.
+9. Do not hallucinate UI behavior, test steps or assume unverified elements.

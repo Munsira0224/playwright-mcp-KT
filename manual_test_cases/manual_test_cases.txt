@@ -1,0 +1,44 @@
+TC_ID : 001
+
+Test Steps                                                                                
+
+1. Launch the browser
+2. Navigate to "https://www.automationexercise.com/"
+3. Click on Contact Us link on top nav bar
+4. Fill the form and upload the file "MyFeedback.txt" which is in my desktop
+5. Do not submit the form
+
+Expected Result
+
+The user should be able to upload file and enter details without any errors
+
+
+TC_ID: 002
+
+Test Steps  
+
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com' (Home Page)
+3. Click on 'Products' button to navigate to the all products page
+4. Enter product name "Blue Top" in search input and click search button
+
+Expected Result
+
+Verify that home page is visible successfully
+Verify user is navigated to ALL PRODUCTS page successfully
+Verify 'SEARCHED PRODUCTS' is visible
+Verify all the products related to search are visible
+
+TC_ID: 003
+
+Test Steps  
+
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com'
+3. Scroll down to footer
+5. Enter dummy email address in input and click arrow button 
+
+Expected Result
+
+Verify text 'SUBSCRIPTION DONE'
+Verify success message 'You have been successfully subscribed!' is visible
