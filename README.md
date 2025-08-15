@@ -1,47 +1,146 @@
 # Playwright-KT-2
 
-## Overview
+## 🎯 Project Overview
 
-This project demonstrates modular, maintainable Playwright end-to-end testing using the MCP workflow and best practices. It includes:
+This project demonstrates end-to-end testing using Playwright, combining automated test generation with manual testing workflows. It follows best practices for modular, maintainable test automation while supporting manual test execution and evidence collection.
 
-- Page Object Models in `src/pages/`
-- Fixtures in `src/fixtures/`
-- Utilities in `src/utils/`
-- Environment variables in `env/.env`
-- Tests in `tests/`
-- Evidence screenshots in `test-results-evidences/[Test_Case_ID]/`
-- Test summary reports in `reports/`
+## 📋 Features
 
-## Getting Started
+- Automated test generation using Page Object Model
+- Manual test case execution with evidence collection
+- Environment variable management
+- Modular and maintainable code structure
+- Screenshot capture and organization
+- Detailed test reporting
 
-1. Install dependencies:
-   ```powershell
+## 📁 Project Structure
+
+```
+playwright-kt-2/
+├── src/
+│   ├── pages/        # Page Object Models
+│   ├── fixtures/     # Playwright fixtures
+│   └── utils/        # Utilities and env loader
+├── tests/           # Test files
+├── manual_test_cases/# Manual test scenarios
+├── test-results-evidences/
+│   └── TC_[ID]/     # Evidence for each test case
+├── reports/         # Test summary reports
+├── env/            # Environment configuration
+└── prompts/        # MCP and manual testing prompts
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version)
+- npm/yarn
+- VS Code with Playwright extension
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Munsira0224/playwright-mcp-KT.git
+   cd playwright-kt-2
+   ```
+
+2. Install dependencies:
+
+   ```bash
    npm install
    ```
-2. Set your base URL and other variables in `env/.env`.
-3. Run tests:
-   ```powershell
-   npx playwright test
-   ```
 
-## Project Structure
+3. Configure environment:
+   - Set your base URL and other variables in `env/.env`
+   - Update variables as needed
 
-- `src/pages/` - Page Object Model classes
-- `src/fixtures/` - Playwright fixtures for page objects
-- `src/utils/` - Utility functions and environment loader
-- `env/.env` - Environment variables
-- `tests/` - Test files
-- `test-results-evidences/` - Screenshots and evidence
-- `reports/` - Test summary reports
+## 🧪 Test Execution
 
-## Best Practices
+### Automated Tests
 
-- Use path aliases for imports (see `tsconfig.json`)
-- Do not hardcode selectors, URLs, or credentials
-- Use environment variables for configuration
-- Follow the Page Object Model pattern
-- Save all evidence in the correct directory
+Run all tests:
 
-## MCP Prompt Compliance
+```bash
+npx playwright test
+```
 
-This project follows the Playwright MCP prompt for step-by-step scenario execution, modular code, and autonomous package management.
+Run a specific test:
+
+```bash
+npx playwright test tests/search-blue-top.spec.ts
+```
+
+### Manual Testing Workflow
+
+1. Execute test cases one by one:
+
+   - Follow steps in `manual_test_cases.txt`
+   - Use Playwright MCP tools for browser interaction
+   - Verify expected results
+
+2. Evidence Collection:
+
+   - Add red border around tested areas
+   - Take screenshots
+   - Save evidence in `test-results-evidences/TC_[ID]/`
+
+3. Reporting:
+   - Create detailed summary in `reports/test_summery`
+   - Include UI/UX improvement suggestions
+
+## 💡 Best Practices
+
+### Automated Testing
+
+- Use Page Object Model pattern
+- Import via page fixtures
+- Use path aliases for imports
+- Follow TypeScript best practices
+- Avoid hardcoding values
+
+### Manual Testing
+
+- Execute tests step-by-step
+- Focus on accessibility and UX
+- Capture clear evidence
+- Document issues thoroughly
+- Suggest improvements
+
+## 📘 Documentation
+
+- `playwright_mcp_prompt.md`: Automated test generation guidelines
+- `manual-testing-prompt.txt`: Manual testing workflow
+- `manual_test_cases.txt`: Test scenarios
+
+## 🛠️ Configuration
+
+- `tsconfig.json`: TypeScript and path aliases
+- `playwright.config.ts`: Playwright settings
+- `env/.env`: Environment variables
+
+## 📝 Reports
+
+Test summaries and evidence are stored in:
+
+- `test-results-evidences/`: Screenshots and test evidence
+- `reports/test_summery`: Detailed test reports
+
+## 🤝 Contributing
+
+1. Follow project structure
+2. Maintain modular code
+3. Update documentation
+4. Include evidence for manual tests
+5. Submit detailed PR descriptions
+
+## 📄 License
+
+MIT License
+
+## 👥 Contact
+
+- Project Owner: Munsira Mansoor
+- GitHub: [@Munsira0224](https://github.com/Munsira0224)
