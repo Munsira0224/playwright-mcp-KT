@@ -16,7 +16,7 @@ This project demonstrates end-to-end testing using Playwright, combining automat
 ## 📁 Project Structure
 
 ```
-playwright-kt-2/
+playwright-mcp-KT/
 ├── src/
 │   ├── pages/        # Page Object Models
 │   ├── fixtures/     # Playwright fixtures
@@ -44,7 +44,6 @@ playwright-kt-2/
 
    ```bash
    git clone https://github.com/Munsira0224/playwright-mcp-KT.git
-   cd playwright-kt-2
    ```
 
 2. Install dependencies:
